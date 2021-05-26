@@ -109,7 +109,15 @@
 }
 
 .nav-home {
-    height: 7rem;
+    min-height: 7rem;
+}
+
+.nav-drop {
+  z-index: 999 !important;
+}
+
+.form-auth {
+    z-index: 5 !important;
 }
 
 .nav.nav-small {
@@ -163,8 +171,10 @@
     padding: 15rem 0;
 }
 
-.footer {
-    padding: 10rem 0;
-    grid-column: full-start / full-end;
-    background-color: $color-grey-dark-1;
+.body-content{
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+

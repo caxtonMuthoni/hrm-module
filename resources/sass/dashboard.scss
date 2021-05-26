@@ -1,0 +1,23 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// adimlte
+@import '~admin-lte/dist/css/adminlte.css';
+
+html {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.avatar {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 10rem;
+    background-color: rgb(122, 122, 122);
+  }

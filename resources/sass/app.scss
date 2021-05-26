@@ -4,6 +4,7 @@
 // Variables
 @import 'variables';
 
+// Saas 
 @import './base/base';
 @import './base/typography';
 @import './base/utilities';
@@ -15,8 +16,16 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+// adimlte
+@import '~admin-lte/dist/css/adminlte.css';
+
 // // Font awesome;
 // @import "~@fortawesome/fontawesome-free/scss/fontawesome";
 // @import "~@fortawesome/fontawesome-free/scss/solid";
 // @import "~@fortawesome/fontawesome-free/scss/brands";
 // @import "~@fortawesome/fontawesome-free/scss/regular";
+
+html {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
