@@ -45,6 +45,7 @@ const actions = {
     },
 
     async sendSMSAction({ commit }, data) {
+        commit('closeDialog', false)
         Vue.prototype.$Progress.start()
         try {
             const response = await axios.post('/api/sms/send', data)

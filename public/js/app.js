@@ -88100,7 +88100,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var options = {
-  color: '##3490dc',
+  color: '#3490dc',
   failedColor: '#874b4b',
   thickness: '5px',
   transition: {
@@ -88293,12 +88293,13 @@ var actions = {
           switch (_context2.prev = _context2.next) {
             case 0:
               commit = _ref2.commit, dispatch = _ref2.dispatch;
+              commit('setCloseDialogue', false);
               vue__WEBPACK_IMPORTED_MODULE_1___default.a.prototype.$Progress.start();
-              _context2.prev = 2;
-              _context2.next = 5;
+              _context2.prev = 3;
+              _context2.next = 6;
               return axios.post('/api/designations/create', data);
 
-            case 5:
+            case 6:
               response = _context2.sent;
               dispatch('getDesignationsAction');
               vue__WEBPACK_IMPORTED_MODULE_1___default.a.prototype.$Progress.finish();
@@ -88307,12 +88308,12 @@ var actions = {
                 title: response.data.message
               });
               commit('setCloseDialogue', true);
-              _context2.next = 16;
+              _context2.next = 17;
               break;
 
-            case 12:
-              _context2.prev = 12;
-              _context2.t0 = _context2["catch"](2);
+            case 13:
+              _context2.prev = 13;
+              _context2.t0 = _context2["catch"](3);
               vue__WEBPACK_IMPORTED_MODULE_1___default.a.prototype.$Progress.fail();
 
               if (_context2.t0.response) {
@@ -88326,12 +88327,12 @@ var actions = {
                 });
               }
 
-            case 16:
+            case 17:
             case "end":
               return _context2.stop();
           }
         }
-      }, _callee2, null, [[2, 12]]);
+      }, _callee2, null, [[3, 13]]);
     }))();
   },
   updateDesignationsAction: function updateDesignationsAction(_ref3, data) {
@@ -88342,12 +88343,13 @@ var actions = {
           switch (_context3.prev = _context3.next) {
             case 0:
               commit = _ref3.commit, dispatch = _ref3.dispatch;
+              commit('setCloseDialogue', false);
               vue__WEBPACK_IMPORTED_MODULE_1___default.a.prototype.$Progress.start();
-              _context3.prev = 2;
-              _context3.next = 5;
+              _context3.prev = 3;
+              _context3.next = 6;
               return axios.put("/api/designations/update/".concat(data.id), data.data);
 
-            case 5:
+            case 6:
               response = _context3.sent;
               dispatch('getDesignationsAction');
               vue__WEBPACK_IMPORTED_MODULE_1___default.a.prototype.$Progress.finish();
@@ -88356,12 +88358,12 @@ var actions = {
                 title: response.data.message
               });
               commit('setCloseDialogue', true);
-              _context3.next = 16;
+              _context3.next = 17;
               break;
 
-            case 12:
-              _context3.prev = 12;
-              _context3.t0 = _context3["catch"](2);
+            case 13:
+              _context3.prev = 13;
+              _context3.t0 = _context3["catch"](3);
               vue__WEBPACK_IMPORTED_MODULE_1___default.a.prototype.$Progress.fail();
 
               if (_context3.t0.response) {
@@ -88375,12 +88377,12 @@ var actions = {
                 });
               }
 
-            case 16:
+            case 17:
             case "end":
               return _context3.stop();
           }
         }
-      }, _callee3, null, [[2, 12]]);
+      }, _callee3, null, [[3, 13]]);
     }))();
   },
   deleteDesignationsAction: function deleteDesignationsAction(_ref4, id) {
@@ -88526,12 +88528,13 @@ var actions = {
           switch (_context2.prev = _context2.next) {
             case 0:
               commit = _ref2.commit, dispatch = _ref2.dispatch;
+              commit('setCloseDialogueEmp', false);
               vue__WEBPACK_IMPORTED_MODULE_1___default.a.prototype.$Progress.start();
-              _context2.prev = 2;
-              _context2.next = 5;
+              _context2.prev = 3;
+              _context2.next = 6;
               return axios.post('/api/employees/create', data);
 
-            case 5:
+            case 6:
               response = _context2.sent;
               dispatch('getEmployeesAction');
               vue__WEBPACK_IMPORTED_MODULE_1___default.a.prototype.$Progress.finish();
@@ -88540,12 +88543,12 @@ var actions = {
                 title: response.data.message
               });
               commit('setCloseDialogueEmp', true);
-              _context2.next = 16;
+              _context2.next = 17;
               break;
 
-            case 12:
-              _context2.prev = 12;
-              _context2.t0 = _context2["catch"](2);
+            case 13:
+              _context2.prev = 13;
+              _context2.t0 = _context2["catch"](3);
               vue__WEBPACK_IMPORTED_MODULE_1___default.a.prototype.$Progress.fail();
 
               if (_context2.t0.response) {
@@ -88559,12 +88562,12 @@ var actions = {
                 });
               }
 
-            case 16:
+            case 17:
             case "end":
               return _context2.stop();
           }
         }
-      }, _callee2, null, [[2, 12]]);
+      }, _callee2, null, [[3, 13]]);
     }))();
   },
   updateEmployeeAction: function updateEmployeeAction(_ref3, data) {
@@ -88575,12 +88578,13 @@ var actions = {
           switch (_context3.prev = _context3.next) {
             case 0:
               commit = _ref3.commit, dispatch = _ref3.dispatch;
+              commit('setCloseDialogueEmp', false);
               vue__WEBPACK_IMPORTED_MODULE_1___default.a.prototype.$Progress.start();
-              _context3.prev = 2;
-              _context3.next = 5;
+              _context3.prev = 3;
+              _context3.next = 6;
               return axios.post("/api/employees/update/".concat(data.id), data.data);
 
-            case 5:
+            case 6:
               response = _context3.sent;
               dispatch('getEmployeesAction');
               vue__WEBPACK_IMPORTED_MODULE_1___default.a.prototype.$Progress.finish();
@@ -88589,12 +88593,12 @@ var actions = {
                 title: response.data.message
               });
               commit('setCloseDialogueEmp', true);
-              _context3.next = 16;
+              _context3.next = 17;
               break;
 
-            case 12:
-              _context3.prev = 12;
-              _context3.t0 = _context3["catch"](2);
+            case 13:
+              _context3.prev = 13;
+              _context3.t0 = _context3["catch"](3);
               vue__WEBPACK_IMPORTED_MODULE_1___default.a.prototype.$Progress.fail();
 
               if (_context3.t0.response) {
@@ -88608,12 +88612,12 @@ var actions = {
                 });
               }
 
-            case 16:
+            case 17:
             case "end":
               return _context3.stop();
           }
         }
-      }, _callee3, null, [[2, 12]]);
+      }, _callee3, null, [[3, 13]]);
     }))();
   },
   deleteEmployeeAction: function deleteEmployeeAction(_ref4, id) {
@@ -88759,12 +88763,13 @@ var actions = {
           switch (_context2.prev = _context2.next) {
             case 0:
               commit = _ref2.commit, dispatch = _ref2.dispatch;
+              commit('setCloseDialogue', false);
               vue__WEBPACK_IMPORTED_MODULE_1___default.a.prototype.$Progress.start();
-              _context2.prev = 2;
-              _context2.next = 5;
+              _context2.prev = 3;
+              _context2.next = 6;
               return axios.post('/api/salary/create', data);
 
-            case 5:
+            case 6:
               response = _context2.sent;
               dispatch('getSalariesAction');
               vue__WEBPACK_IMPORTED_MODULE_1___default.a.prototype.$Progress.finish();
@@ -88773,12 +88778,12 @@ var actions = {
                 title: response.data.message
               });
               commit('setCloseDialogue', true);
-              _context2.next = 16;
+              _context2.next = 17;
               break;
 
-            case 12:
-              _context2.prev = 12;
-              _context2.t0 = _context2["catch"](2);
+            case 13:
+              _context2.prev = 13;
+              _context2.t0 = _context2["catch"](3);
               vue__WEBPACK_IMPORTED_MODULE_1___default.a.prototype.$Progress.fail();
 
               if (_context2.t0.response) {
@@ -88792,12 +88797,12 @@ var actions = {
                 });
               }
 
-            case 16:
+            case 17:
             case "end":
               return _context2.stop();
           }
         }
-      }, _callee2, null, [[2, 12]]);
+      }, _callee2, null, [[3, 13]]);
     }))();
   },
   updateSalaryAction: function updateSalaryAction(_ref3, data) {
@@ -88808,12 +88813,13 @@ var actions = {
           switch (_context3.prev = _context3.next) {
             case 0:
               commit = _ref3.commit, dispatch = _ref3.dispatch;
+              commit('setCloseDialogue', false);
               vue__WEBPACK_IMPORTED_MODULE_1___default.a.prototype.$Progress.start();
-              _context3.prev = 2;
-              _context3.next = 5;
+              _context3.prev = 3;
+              _context3.next = 6;
               return axios.put("/api/salary/update/".concat(data.id), data.data);
 
-            case 5:
+            case 6:
               response = _context3.sent;
               dispatch('getSalariesAction');
               vue__WEBPACK_IMPORTED_MODULE_1___default.a.prototype.$Progress.finish();
@@ -88822,12 +88828,12 @@ var actions = {
                 title: response.data.message
               });
               commit('setCloseDialogue', true);
-              _context3.next = 16;
+              _context3.next = 17;
               break;
 
-            case 12:
-              _context3.prev = 12;
-              _context3.t0 = _context3["catch"](2);
+            case 13:
+              _context3.prev = 13;
+              _context3.t0 = _context3["catch"](3);
               vue__WEBPACK_IMPORTED_MODULE_1___default.a.prototype.$Progress.fail();
 
               if (_context3.t0.response) {
@@ -88841,12 +88847,12 @@ var actions = {
                 });
               }
 
-            case 16:
+            case 17:
             case "end":
               return _context3.stop();
           }
         }
-      }, _callee3, null, [[2, 12]]);
+      }, _callee3, null, [[3, 13]]);
     }))();
   },
   deleteSalaryAction: function deleteSalaryAction(_ref4, id) {
@@ -88988,12 +88994,13 @@ var actions = {
           switch (_context2.prev = _context2.next) {
             case 0:
               commit = _ref2.commit;
+              commit('closeDialog', false);
               vue__WEBPACK_IMPORTED_MODULE_1___default.a.prototype.$Progress.start();
-              _context2.prev = 2;
-              _context2.next = 5;
+              _context2.prev = 3;
+              _context2.next = 6;
               return axios.post('/api/sms/send', data);
 
-            case 5:
+            case 6:
               response = _context2.sent;
 
               if (response.data.status) {
@@ -89010,24 +89017,24 @@ var actions = {
               }
 
               vue__WEBPACK_IMPORTED_MODULE_1___default.a.prototype.$Progress.finish();
-              _context2.next = 14;
+              _context2.next = 15;
               break;
 
-            case 10:
-              _context2.prev = 10;
-              _context2.t0 = _context2["catch"](2);
+            case 11:
+              _context2.prev = 11;
+              _context2.t0 = _context2["catch"](3);
               vue__WEBPACK_IMPORTED_MODULE_1___default.a.prototype.$Progress.fail();
               _plugins_toast__WEBPACK_IMPORTED_MODULE_2__["default"].fire({
                 icon: 'error',
                 title: _context2.t0.message
               });
 
-            case 14:
+            case 15:
             case "end":
               return _context2.stop();
           }
         }
-      }, _callee2, null, [[2, 10]]);
+      }, _callee2, null, [[3, 11]]);
     }))();
   },
   deleteSMSAction: function deleteSMSAction(_ref3, id) {

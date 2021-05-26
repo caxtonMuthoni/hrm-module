@@ -49,6 +49,7 @@ const actions = {
     },
 
     async createDesignationsAction({ commit, dispatch }, data) {
+        commit('setCloseDialogue', false)
         Vue.prototype.$Progress.start()
         try {
             const response = await axios.post('/api/designations/create', data)
@@ -77,6 +78,7 @@ const actions = {
     },
 
     async updateDesignationsAction({ commit, dispatch }, data) {
+        commit('setCloseDialogue', false)
         Vue.prototype.$Progress.start()
         try {
             const response = await axios.put(`/api/designations/update/${data.id}`, data.data)

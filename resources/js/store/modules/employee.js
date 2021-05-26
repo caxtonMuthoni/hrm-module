@@ -49,6 +49,7 @@ const actions = {
     },
 
     async createEmployeeAction({ commit, dispatch }, data) {
+        commit('setCloseDialogueEmp', false)
         Vue.prototype.$Progress.start()
         try {
             const response = await axios.post('/api/employees/create', data)
@@ -77,6 +78,7 @@ const actions = {
     },
 
     async updateEmployeeAction({ commit, dispatch }, data) {
+        commit('setCloseDialogueEmp', false)
         Vue.prototype.$Progress.start()
         try {
             const response = await axios.post(`/api/employees/update/${data.id}`, data.data)

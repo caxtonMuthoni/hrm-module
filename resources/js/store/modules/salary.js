@@ -50,6 +50,7 @@ const actions = {
     },
 
     async createSalaryAction({ commit, dispatch }, data) {
+        commit('setCloseDialogue', false)
         Vue.prototype.$Progress.start()
         try {
             const response = await axios.post('/api/salary/create', data)
@@ -78,6 +79,7 @@ const actions = {
     },
 
     async updateSalaryAction({ commit, dispatch }, data) {
+        commit('setCloseDialogue', false)
         Vue.prototype.$Progress.start()
         try {
             const response = await axios.put(`/api/salary/update/${data.id}`, data.data)
