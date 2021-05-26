@@ -19,8 +19,8 @@
     <title>HRM | Human resource management</title>
     
 
-    <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}">
-    <!-- <link rel="stylesheet" href="{{ secure_asset('css/dashboard.css') }}"> -->
+    <!-- <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}"> -->
+    <link rel="stylesheet" href="{{ secure_asset('css/dashboard.css') }}">
 
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -178,8 +178,8 @@
     <!-- ./wrapper -->
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
-    <!-- <script src="{{ secure_asset('js/app.js') }}"></script> -->
+    <!-- <script src="{{ asset('js/app.js') }}"></script> -->
+    <script src="{{ secure_asset('js/app.js') }}"></script>
 
 
     </script>
